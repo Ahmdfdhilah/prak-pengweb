@@ -1,0 +1,148 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --black: #001a00;
+    --green: #00cc66;
+}
+.green{
+    color: var(--green);
+}
+.background{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section{
+    width: 90%;
+    background-color: #f3f0f0;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    background-color: var(--black);
+    color: #fff;
+    gap: 50px;
+    align-items: center;
+}
+.text{
+    height: fit-content;
+}
+.title{
+    font-size: 30px;
+}
+.section-title{
+    font-size: 3rem;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    padding-bottom: 2rem;
+}
+.img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menu{
+    margin: 0 auto;
+    padding :5px;
+    position: relative;
+    background-color: #1c251c;
+}
+.menu ul{
+   display: flex;
+   gap: 30px;
+   justify-content: end;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: var(--green);
+    transition: ease .5s;
+}
+.about-text{
+    font-size: 1.5rem;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+.about video{
+    width: 600px;
+}
+.about .video{
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+}
+.experience table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.experience th, .experience td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.experience th {
+    background-color: #f2f2f2;
+}
+
+form {
+    text-align: left;
+    padding-left: 10%;
+    width: fit-content;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+button[type="button"] {
+    padding: 10px 50px;
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: var(--black);
+}
+footer{
+    text-align: center;
+    background-color: #1c251c;
+    color: #f2f2f2;
+}
