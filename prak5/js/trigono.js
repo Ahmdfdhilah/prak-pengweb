@@ -39,7 +39,6 @@ function checkIfDegreeClassIsActive() {
   }
 }
 
-// Changing the button innerText from radians to degrees
 mod.onclick = () => {
   mod.classList.toggle("deg");
 
@@ -48,7 +47,6 @@ mod.onclick = () => {
     : (mod.textContent = "rad");
 };
 
-// Activates the second row and changes the buttons
 invert.onclick = () => {
   invert.classList.toggle("active");
   invert.classList.toggle("second-row-pressed");
