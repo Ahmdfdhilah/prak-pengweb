@@ -1,0 +1,30 @@
+<!-- Ahmad Fadillah
+121140173
+RB -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page | Tugas</title>
+    <script>
+        function calculateNumbers() {
+            var num = parseInt(document.getElementById("integer").value);
+            var oddCount = 0;
+            var evenCount = 0;
+            for (var index = 1; index <= num; index++) {
+                index % 2 === 0 ? evenCount++ : oddCount++;
+            }
+            document.getElementById("result").innerHTML = `Total odd numbers: ${oddCount} <br> Total even numbers: ${evenCount}`;
+            document.getElementById("integer").value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Hitung Bilangan Ganjil dan Genap</h1>
+    <p>Masukkan bilangan bulat positif: <input type="number" id="integer" min="1" step="1"></p>
+    <button onclick="calculateNumbers()">Hitung</button>
+    <br>
+    <span id="result"></span>
+</body>
+
+</html>
